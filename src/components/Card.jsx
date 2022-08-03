@@ -1,23 +1,26 @@
 import React from "react"
-import cardImg from "../images/weddingImg.png"
-import starImg from "../images/starImg.png"
 
-// use props and make dynamic
+export default function Card(props){
 
-export default function Navbar(){
+    let badgeText
+
+    if(props.item.openSpots < 1){
+        badgeText = "Sold Out"
+    }
+    if(props.item.openSpots === "Online"){
+        badgeText = "Online"
+    }
+
     return(
         <div>
-            <p>badge</p>
-            <img src={cardImg}/>
+            <p>{badgeText}</p>
+            <img src={`/imgs/${props.item.coverImg}`} />
             <div className="stats">
-                <img src={starImg} />
-                <p>5.0</p>
-                <p>(6)</p>
-                <p> • </p>
-                <p>USA</p>
+                <img src="/imgs/starImg.png" />
+                <p>{props.item.stats.rating} ({props.item.stats.reviewCount}) • {props.item.location}</p>
             </div>
-            <p>Life lessons with Kate Zaferes</p>
-            <p>From $136/ person</p>
+            <p>{props.item.title}</p>
+            <p>From ${props.item.price}/ person</p>
         </div>
     )
 }
