@@ -1,0 +1,16 @@
+.content{
+    padding: 5px 9px;
+}
+
+.cardImg{
+    border-radius: 9px;
+}
+
+.stats{
+    display: flex;
+}
+
+.star{
+    width: 14px;
+    height: 14px;
+}

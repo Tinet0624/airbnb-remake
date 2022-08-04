@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import Hero from "./Hero"
 import Card from "./Card"
 import cardData from "../data"
+import appCss from "../styles/App.module.css"
 
 export default function App() {
 
@@ -16,10 +17,10 @@ export default function App() {
   })
 
     return(
-      <div>
+      <div className={appCss.content}>
         <Navbar />
         <Hero />
-        <section>
+        <section className={appCss.cardList}>
           {cardList}
         </section>
       </div>

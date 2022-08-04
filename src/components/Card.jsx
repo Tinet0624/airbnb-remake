@@ -1,4 +1,5 @@
 import React from "react"
+import cardCss from "../styles/Card.module.css"
 
 export default function Card(props){
 
@@ -12,11 +13,11 @@ export default function Card(props){
     }
 
     return(
-        <div>
-            <p>{badgeText}</p>
-            <img src={`/imgs/${props.item.coverImg}`} />
-            <div className="stats">
-                <img src="/imgs/starImg.png" />
+        <div className={cardCss.content}>
+            {/* <p>{badgeText}</p> */}
+            <img src={`/imgs/${props.item.coverImg}`} className={cardCss.cardImg} />
+            <div className={cardCss.stats}>
+                <img src="/imgs/starImg.png" className={cardCss.star}/>
                 <p>{props.item.stats.rating} ({props.item.stats.reviewCount}) • {props.item.location}</p>
             </div>
             <p>{props.item.title}</p>
