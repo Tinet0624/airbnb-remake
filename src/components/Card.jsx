@@ -21,7 +21,10 @@ export default function Card(props){
                 <p>{props.item.stats.rating} ({props.item.stats.reviewCount}) • {props.item.location}</p>
             </div>
             <p>{props.item.title}</p>
-            <p>From ${props.item.price}/ person</p>
+            <div className={cardCss.price}>
+                <h4>From ${props.item.price}</h4><p> / person</p>
+            </div>
+            
         </div>
     )
 }

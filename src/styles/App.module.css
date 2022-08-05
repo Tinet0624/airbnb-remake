@@ -1,7 +1,9 @@
 .cardList{
     display: flex;
     padding: 40px 36px;
-    width: 500px;
+    max-width: 500px;
+    overflow: scroll;
+    overflow-y: hidden;
 }
 
 .content{

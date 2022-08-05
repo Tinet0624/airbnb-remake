@@ -1,5 +1,7 @@
 .content{
     padding: 5px 9px;
+    font-weight: 300;
+    font-size: 12px;
 }
 
 .cardImg{
@@ -13,4 +15,9 @@
 .star{
     width: 14px;
     height: 14px;
+    padding: 0px 2px;
+}
+
+.price{
+    display: flex;
 }
