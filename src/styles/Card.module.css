@@ -4,10 +4,6 @@
     font-size: 12px;
 }
 
-.cardImg{
-    border-radius: 9px;
-}
-
 .stats{
     display: flex;
 }
@@ -20,4 +16,19 @@
 
 .price{
     display: flex;
+}
+
+.cardImg{
+    position: relative;
+    border-radius: 9px;
+}
+
+.badge{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: rgb(255, 0, 179);
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }
