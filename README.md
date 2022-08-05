@@ -1,4 +1,4 @@
-# React Business Card
+# Airbnb remake
 Site uses [Vite](https://vitejs.dev/) dev tool.
 <br>
 Im learning react from [Scrimba](https://scrimba.com/learn/learnreact).
